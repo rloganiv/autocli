@@ -20,6 +20,9 @@ def add_command(name: str, help: Optional[str] = None) -> Callable:
 
 def parse_and_run():
     args = _autocli_parser.parse_args()
-    function = args._autocli_function
-    def args._autocli_function
-    function(**vars(args))
+    if '_autocli_function' in dir(args):
+        function = args._autocli_function
+        del args._autocli_function
+        function(**vars(args))
+    else:
+        _autocli_parser.print_help()
