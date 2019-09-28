@@ -103,6 +103,6 @@ Say hello in an obnoxious manner.
 
 optional arguments:
   -h, --help         show this help message and exit
-  --name NAME        Name to greet. (default: Ntone)
+  --name NAME        Name to greet. (default: None)
   --repeats REPEATS  Number of times to repeat the greeting. (default: 3)
 ```
