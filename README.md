@@ -7,7 +7,7 @@ Ceate command line interfaces for your Python code in seconds.
 Installation
 ---
 
-```{bash}
+```
 pip install git+https://github.com/rloganiv/autocli
 ```
 
@@ -79,7 +79,7 @@ if __name__ == '__main__':
     autocli.parse_and_run()
 ```
 Now you can use them in the terminal!
-```bash
+```
 > python example.py hello --name "world"
 Hello world!
 
@@ -88,14 +88,14 @@ Hello world!
 Hello world!
 ```
 Automatic CLI even knows to use default parameters...
-```bash
+```
 > python example.py annoying_hello --name "world"
 Hello world!
 Hello world!
 Hello world!
 ```
 ...and can automatically create help documentation if you use NumPy style docstrings.
-```bash
+```
 > python example.py annoying_hello -h
 usage: example.py annoying_hello [-h] --name NAME [--repeats REPEATS]
 
