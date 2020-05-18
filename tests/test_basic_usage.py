@@ -27,3 +27,9 @@ def test_help():
     args = ['python', 'tests/example.py', 'annoying_hello', '-h']
     result = subprocess.run(args, stdout=subprocess.PIPE)
     assert result.stdout.decode('utf-8') == expected_help
+
+
+def test_read_list():
+    args = ['python', 'tests/example.py', 'read_list', '--elements',  'a', 'b', 'c']
+    result = subprocess.run(args, stdout=subprocess.PIPE)
+    assert result.stdout.decode('utf-8') == "['a', 'b', 'c']\n"
