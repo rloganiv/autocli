@@ -5,7 +5,7 @@ import warnings
 import inspect
 from typing import Callable, Optional
 
-from numpydoc.docscrape import NumpyDocString
+from numpydoc.docscrape import NumpyDocString, ParseError
 
 
 _autocli_parser = argparse.ArgumentParser()
